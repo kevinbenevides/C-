@@ -4,7 +4,7 @@ namespace Senai.Operadores.Exercicio3
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main(string[] args) 
         {
             Console.WriteLine("Digite o preço do produto 1:" );
             float preco1 = float.Parse(Console.ReadLine());
