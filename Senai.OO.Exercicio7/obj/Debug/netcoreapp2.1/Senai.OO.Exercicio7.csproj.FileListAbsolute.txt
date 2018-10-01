@@ -1,0 +1,11 @@
+C:\Users\Kleber\Documents\Kevin\C#\Senai.OO.Exercicio7\bin\Debug\netcoreapp2.1\Senai.OO.Exercicio7.deps.json
+C:\Users\Kleber\Documents\Kevin\C#\Senai.OO.Exercicio7\bin\Debug\netcoreapp2.1\Senai.OO.Exercicio7.runtimeconfig.json
+C:\Users\Kleber\Documents\Kevin\C#\Senai.OO.Exercicio7\bin\Debug\netcoreapp2.1\Senai.OO.Exercicio7.runtimeconfig.dev.json
+C:\Users\Kleber\Documents\Kevin\C#\Senai.OO.Exercicio7\bin\Debug\netcoreapp2.1\Senai.OO.Exercicio7.dll
+C:\Users\Kleber\Documents\Kevin\C#\Senai.OO.Exercicio7\bin\Debug\netcoreapp2.1\Senai.OO.Exercicio7.pdb
+C:\Users\Kleber\Documents\Kevin\C#\Senai.OO.Exercicio7\obj\Debug\netcoreapp2.1\Senai.OO.Exercicio7.csprojAssemblyReference.cache
+C:\Users\Kleber\Documents\Kevin\C#\Senai.OO.Exercicio7\obj\Debug\netcoreapp2.1\Senai.OO.Exercicio7.csproj.CoreCompileInputs.cache
+C:\Users\Kleber\Documents\Kevin\C#\Senai.OO.Exercicio7\obj\Debug\netcoreapp2.1\Senai.OO.Exercicio7.AssemblyInfoInputs.cache
+C:\Users\Kleber\Documents\Kevin\C#\Senai.OO.Exercicio7\obj\Debug\netcoreapp2.1\Senai.OO.Exercicio7.AssemblyInfo.cs
+C:\Users\Kleber\Documents\Kevin\C#\Senai.OO.Exercicio7\obj\Debug\netcoreapp2.1\Senai.OO.Exercicio7.dll
+C:\Users\Kleber\Documents\Kevin\C#\Senai.OO.Exercicio7\obj\Debug\netcoreapp2.1\Senai.OO.Exercicio7.pdb

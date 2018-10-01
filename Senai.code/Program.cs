@@ -21,17 +21,21 @@ namespace Senai.code
             produto.vp = produto.preco/produto.qtpres;
             produto.a = produto.vp*(0.05*(produto.qtpres-1));
 
+            Console.Clear();
+
             Console.WriteLine($"Nome: {produto.Nome}");
 
-            Console.WriteLine($"Preço real: {produto.preco}" );
+            Console.WriteLine($"Preço real: R${produto.preco}" );
 
-            Console.WriteLine($"Quantidade do produto: {produto.qtpres}");
+            Console.WriteLine($"Quantidade de prestação(ões): {produto.qtpres}");
 
-            Console.WriteLine($"Valor real para cada prestação: {produto.vp}");
+            Console.WriteLine($"Valor real para cada prestação: R${produto.vp}");
 
-            Console.WriteLine($"Valor do acrescimo: {produto.a}");
+            Console.WriteLine($"Valor do acrescimo: R${produto.a}");
+
+            Console.WriteLine("");
             
-            Console.WriteLine($"Valor para cada mensalidade: {produto.vp + produto.a}");
+            Console.WriteLine($"Valor para cada mensalidade: R${produto.vp + produto.a}");
 
             
         }
