@@ -1,0 +1,11 @@
+C:\Users\39235256801\Downloads\C-sharp-master\Exercicios.Switch\Senai.Exercicio.Swich3\bin\Debug\netcoreapp2.1\Senai.Exercicio.Swich3.deps.json
+C:\Users\39235256801\Downloads\C-sharp-master\Exercicios.Switch\Senai.Exercicio.Swich3\bin\Debug\netcoreapp2.1\Senai.Exercicio.Swich3.runtimeconfig.json
+C:\Users\39235256801\Downloads\C-sharp-master\Exercicios.Switch\Senai.Exercicio.Swich3\bin\Debug\netcoreapp2.1\Senai.Exercicio.Swich3.runtimeconfig.dev.json
+C:\Users\39235256801\Downloads\C-sharp-master\Exercicios.Switch\Senai.Exercicio.Swich3\bin\Debug\netcoreapp2.1\Senai.Exercicio.Swich3.dll
+C:\Users\39235256801\Downloads\C-sharp-master\Exercicios.Switch\Senai.Exercicio.Swich3\bin\Debug\netcoreapp2.1\Senai.Exercicio.Swich3.pdb
+C:\Users\39235256801\Downloads\C-sharp-master\Exercicios.Switch\Senai.Exercicio.Swich3\obj\Debug\netcoreapp2.1\Senai.Exercicio.Swich3.csprojAssemblyReference.cache
+C:\Users\39235256801\Downloads\C-sharp-master\Exercicios.Switch\Senai.Exercicio.Swich3\obj\Debug\netcoreapp2.1\Senai.Exercicio.Swich3.csproj.CoreCompileInputs.cache
+C:\Users\39235256801\Downloads\C-sharp-master\Exercicios.Switch\Senai.Exercicio.Swich3\obj\Debug\netcoreapp2.1\Senai.Exercicio.Swich3.AssemblyInfoInputs.cache
+C:\Users\39235256801\Downloads\C-sharp-master\Exercicios.Switch\Senai.Exercicio.Swich3\obj\Debug\netcoreapp2.1\Senai.Exercicio.Swich3.AssemblyInfo.cs
+C:\Users\39235256801\Downloads\C-sharp-master\Exercicios.Switch\Senai.Exercicio.Swich3\obj\Debug\netcoreapp2.1\Senai.Exercicio.Swich3.dll
+C:\Users\39235256801\Downloads\C-sharp-master\Exercicios.Switch\Senai.Exercicio.Swich3\obj\Debug\netcoreapp2.1\Senai.Exercicio.Swich3.pdb
