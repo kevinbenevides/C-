@@ -687,11 +687,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\39235256801\\Downloads\\C-sharp-master\\Exercicios.Switch\\Senai.Exercicio.Swich2\\Senai.Exercicio.Swirch2.csproj",
+      "projectUniqueName": "c:\\Users\\39235256801\\Documents\\sprint_4\\Exercicios.Switch\\Senai.Exercicio.Switch2\\Senai.Exercicio.Swirch2.csproj",
       "projectName": "Senai.Exercicio.Swirch2",
-      "projectPath": "c:\\Users\\39235256801\\Downloads\\C-sharp-master\\Exercicios.Switch\\Senai.Exercicio.Swich2\\Senai.Exercicio.Swirch2.csproj",
+      "projectPath": "c:\\Users\\39235256801\\Documents\\sprint_4\\Exercicios.Switch\\Senai.Exercicio.Switch2\\Senai.Exercicio.Swirch2.csproj",
       "packagesPath": "C:\\Users\\39235256801\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\39235256801\\Downloads\\C-sharp-master\\Exercicios.Switch\\Senai.Exercicio.Swich2\\obj\\",
+      "outputPath": "c:\\Users\\39235256801\\Documents\\sprint_4\\Exercicios.Switch\\Senai.Exercicio.Switch2\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

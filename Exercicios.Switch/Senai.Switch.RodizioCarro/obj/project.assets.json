@@ -687,11 +687,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\39235256801\\Downloads\\C-sharp-master\\Exercicios.Switch\\Senai.Switch.RodizioCarro\\Senai.Switch.RodizioCarro.csproj",
+      "projectUniqueName": "c:\\Users\\39235256801\\Documents\\sprint_4\\Exercicios.Switch\\Senai.Switch.RodizioCarro\\Senai.Switch.RodizioCarro.csproj",
       "projectName": "Senai.Switch.RodizioCarro",
-      "projectPath": "c:\\Users\\39235256801\\Downloads\\C-sharp-master\\Exercicios.Switch\\Senai.Switch.RodizioCarro\\Senai.Switch.RodizioCarro.csproj",
+      "projectPath": "c:\\Users\\39235256801\\Documents\\sprint_4\\Exercicios.Switch\\Senai.Switch.RodizioCarro\\Senai.Switch.RodizioCarro.csproj",
       "packagesPath": "C:\\Users\\39235256801\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\39235256801\\Downloads\\C-sharp-master\\Exercicios.Switch\\Senai.Switch.RodizioCarro\\obj\\",
+      "outputPath": "c:\\Users\\39235256801\\Documents\\sprint_4\\Exercicios.Switch\\Senai.Switch.RodizioCarro\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

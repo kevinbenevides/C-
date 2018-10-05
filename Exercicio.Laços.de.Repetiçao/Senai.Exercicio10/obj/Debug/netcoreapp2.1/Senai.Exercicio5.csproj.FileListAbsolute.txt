@@ -1,0 +1,11 @@
+C:\Users\Kleber\Documents\Kevin\C#\Senai.Exercicios.While\Senai.Exercicio5\bin\Debug\netcoreapp2.1\Senai.Exercicio5.deps.json
+C:\Users\Kleber\Documents\Kevin\C#\Senai.Exercicios.While\Senai.Exercicio5\bin\Debug\netcoreapp2.1\Senai.Exercicio5.runtimeconfig.json
+C:\Users\Kleber\Documents\Kevin\C#\Senai.Exercicios.While\Senai.Exercicio5\bin\Debug\netcoreapp2.1\Senai.Exercicio5.runtimeconfig.dev.json
+C:\Users\Kleber\Documents\Kevin\C#\Senai.Exercicios.While\Senai.Exercicio5\bin\Debug\netcoreapp2.1\Senai.Exercicio5.dll
+C:\Users\Kleber\Documents\Kevin\C#\Senai.Exercicios.While\Senai.Exercicio5\bin\Debug\netcoreapp2.1\Senai.Exercicio5.pdb
+C:\Users\Kleber\Documents\Kevin\C#\Senai.Exercicios.While\Senai.Exercicio5\obj\Debug\netcoreapp2.1\Senai.Exercicio5.csprojAssemblyReference.cache
+C:\Users\Kleber\Documents\Kevin\C#\Senai.Exercicios.While\Senai.Exercicio5\obj\Debug\netcoreapp2.1\Senai.Exercicio5.csproj.CoreCompileInputs.cache
+C:\Users\Kleber\Documents\Kevin\C#\Senai.Exercicios.While\Senai.Exercicio5\obj\Debug\netcoreapp2.1\Senai.Exercicio5.AssemblyInfoInputs.cache
+C:\Users\Kleber\Documents\Kevin\C#\Senai.Exercicios.While\Senai.Exercicio5\obj\Debug\netcoreapp2.1\Senai.Exercicio5.AssemblyInfo.cs
+C:\Users\Kleber\Documents\Kevin\C#\Senai.Exercicios.While\Senai.Exercicio5\obj\Debug\netcoreapp2.1\Senai.Exercicio5.dll
+C:\Users\Kleber\Documents\Kevin\C#\Senai.Exercicios.While\Senai.Exercicio5\obj\Debug\netcoreapp2.1\Senai.Exercicio5.pdb
