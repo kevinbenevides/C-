@@ -1,0 +1,14 @@
+C:\Users\39235256801\Documents\sprint_4\Exercicio.Metodos\Senai.Exercicio.3\bin\Release\netcoreapp2.1\win10-x64\hostpolicy.dll
+C:\Users\39235256801\Documents\sprint_4\Exercicio.Metodos\Senai.Exercicio.3\bin\Release\netcoreapp2.1\win10-x64\hostfxr.dll
+C:\Users\39235256801\Documents\sprint_4\Exercicio.Metodos\Senai.Exercicio.3\bin\Release\netcoreapp2.1\win10-x64\Senai.Exerciocio.3.exe
+C:\Users\39235256801\Documents\sprint_4\Exercicio.Metodos\Senai.Exercicio.3\bin\Release\netcoreapp2.1\win10-x64\Senai.Exerciocio.3.deps.json
+C:\Users\39235256801\Documents\sprint_4\Exercicio.Metodos\Senai.Exercicio.3\bin\Release\netcoreapp2.1\win10-x64\Senai.Exerciocio.3.runtimeconfig.json
+C:\Users\39235256801\Documents\sprint_4\Exercicio.Metodos\Senai.Exercicio.3\bin\Release\netcoreapp2.1\win10-x64\Senai.Exerciocio.3.runtimeconfig.dev.json
+C:\Users\39235256801\Documents\sprint_4\Exercicio.Metodos\Senai.Exercicio.3\bin\Release\netcoreapp2.1\win10-x64\Senai.Exerciocio.3.dll
+C:\Users\39235256801\Documents\sprint_4\Exercicio.Metodos\Senai.Exercicio.3\bin\Release\netcoreapp2.1\win10-x64\Senai.Exerciocio.3.pdb
+C:\Users\39235256801\Documents\sprint_4\Exercicio.Metodos\Senai.Exercicio.3\obj\Release\netcoreapp2.1\win10-x64\Senai.Exerciocio.3.csprojAssemblyReference.cache
+C:\Users\39235256801\Documents\sprint_4\Exercicio.Metodos\Senai.Exercicio.3\obj\Release\netcoreapp2.1\win10-x64\Senai.Exerciocio.3.csproj.CoreCompileInputs.cache
+C:\Users\39235256801\Documents\sprint_4\Exercicio.Metodos\Senai.Exercicio.3\obj\Release\netcoreapp2.1\win10-x64\Senai.Exerciocio.3.AssemblyInfoInputs.cache
+C:\Users\39235256801\Documents\sprint_4\Exercicio.Metodos\Senai.Exercicio.3\obj\Release\netcoreapp2.1\win10-x64\Senai.Exerciocio.3.AssemblyInfo.cs
+C:\Users\39235256801\Documents\sprint_4\Exercicio.Metodos\Senai.Exercicio.3\obj\Release\netcoreapp2.1\win10-x64\Senai.Exerciocio.3.dll
+C:\Users\39235256801\Documents\sprint_4\Exercicio.Metodos\Senai.Exercicio.3\obj\Release\netcoreapp2.1\win10-x64\Senai.Exerciocio.3.pdb
