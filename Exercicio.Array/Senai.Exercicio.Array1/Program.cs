@@ -6,7 +6,7 @@ namespace Senai.Exercicio.Array1
     {
         static void Main(string[] args)
         {
-            int opcao, posicao = 0;
+            int opcao, posicao = 0, posicaoexibir = 0;
             string[] nome = new string[4];
             int[] numero = new int[4];
             DateTime[] data = new DateTime[4];
@@ -38,21 +38,21 @@ namespace Senai.Exercicio.Array1
                             posicao++;
                             }
                             else{
-                                Console.WriteLine("Deu erro!");
+                                Console.WriteLine("Limite de passagens Excedida.");
                             }
                             break;
                         }
 
                     case 2:{
+                            Console.WriteLine("\nAqui estão os agendamentos feitos: ");
+                            posicaoexibir = 0;
                         do{
-                            Console.Clear();
-                            Console.WriteLine("Aqui estão os agendamentos feitos: ");
-                            Console.WriteLine($"Nome do Passageiro: {nome[posicao]}");
-                            Console.WriteLine($"Número da Passagem: {numero[posicao]}");
-                            Console.WriteLine($"Data do voo: {data[posicao]}");
-                            posicao++;
+                            Console.WriteLine($"Nome do Passageiro: {nome[posicaoexibir]}");
+                            Console.WriteLine($"Número da Passagem: {numero[posicaoexibir]}");
+                            Console.WriteLine($"Data do voo: {data[posicaoexibir].ToShortDateString()}");
+                            posicaoexibir++;
                         }
-                        while(posicao <= 2);{
+                        while(posicaoexibir < 3);{
                         Console.WriteLine("Registre todas as informações");
                         break;
                         }
