@@ -687,11 +687,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\39235256801\\Documents\\sprint_4\\Projeto.Pizzaria\\Senai.Pizzaria\\Senai.Pizzaria.csproj",
+      "projectUniqueName": "c:\\Users\\39235256801\\Documents\\sprint_4\\Senai.Pizzaria\\Senai.Pizzaria.csproj",
       "projectName": "Senai.Pizzaria",
-      "projectPath": "C:\\Users\\39235256801\\Documents\\sprint_4\\Projeto.Pizzaria\\Senai.Pizzaria\\Senai.Pizzaria.csproj",
+      "projectPath": "c:\\Users\\39235256801\\Documents\\sprint_4\\Senai.Pizzaria\\Senai.Pizzaria.csproj",
       "packagesPath": "C:\\Users\\39235256801\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\39235256801\\Documents\\sprint_4\\Projeto.Pizzaria\\Senai.Pizzaria\\obj\\",
+      "outputPath": "c:\\Users\\39235256801\\Documents\\sprint_4\\Senai.Pizzaria\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
