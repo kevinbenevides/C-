@@ -22,6 +22,39 @@ namespace Senai.OO.Pizzaria.MVC
                         UsuarioViewController.CadastrarUsuario();
                         break;
                     }
+                    case 2:{
+                        //Chama a página Login e aguarda o retorno
+                        UsuarioViewModel usuarioViewModel = UsuarioViewController.EfetuarLogin();
+
+                        //Usuário é válido
+                        if (usuarioViewModel != null){
+                            //Mensagem de boas vindas
+                            System.Console.WriteLine("Seja Bem vindo" + usuarioViewModel.Nome);
+
+                            //Laço menu logado
+                            do
+                            {
+                                //Mostra menu logado
+                                MenuUtil.MenuLogado();
+
+                                //Obtém opção do menu
+                                opcaoLogado = int.Parse(Console.ReadLine());
+
+                                switch (opcaoLogado)
+                                {
+                                    case 0:{
+                                        System.Console.WriteLine("Tchau");
+                                        break;
+                                    }
+                                    default:{
+                                        System.Console.WriteLine("Opção invalida");
+                                        break;
+                                    }
+                                }
+                            }while(opcaoLogado != 0);
+                        }
+                        break;
+                    }
                     case 3:{
                         UsuarioViewController.ListarUsuario();
                         break;
