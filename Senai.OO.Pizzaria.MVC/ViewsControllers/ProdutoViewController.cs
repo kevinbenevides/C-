@@ -85,7 +85,7 @@ namespace Senai.OO.Pizzaria.MVC.ViewsControllers
                     break;
                 }
 
-                ProdutoViewModel produtoViewModel = produtoRep.
+                ProdutoViewModel produtoViewModel = produtoRep.Inserir();
                 
                 }while(idProduto != 0);
             }
