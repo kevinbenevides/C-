@@ -1,0 +1,49 @@
+@using Projeto.Web.Mvc.Models;
+
+<a href="/Usuario/Cadastrar">Sair</a>
+
+<h3>Listagem de Usuários</h3>
+
+@TempData["Mensagem"]
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>Data de Criação</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in ViewData["Usuarios"] as List<UsuarioModel>)
+        {
+            <tr>
+                <td>
+                    @item.Id
+                </td>
+                <td>
+                    @item.Nome
+                </td>
+                <td>
+                    @item.Email
+                </td>
+                <td>
+                    @item.DataCriacao.ToShortDateString()
+                </td>
+                <td>
+                    <a href="/Usuario/Excluir?id=@item.Id">Excluir</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<select name="usuaios">
+    @foreach (var item in ViewData["Usuarios"] as List<UsuarioModel>)
+    {
+        <option value="@item.Email">
+            @item.Nome
+        </option>
+    }
+</select>
