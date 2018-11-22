@@ -33,7 +33,7 @@ namespace Projeto.Web.Mvc.Controllers
 
             ViewBag.Mensagem = "Transação cadastrada";
             
-            return View();
+            return RedirectToAction("Cadastrar", "Usuário");
         }
 
     }

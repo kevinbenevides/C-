@@ -48,8 +48,10 @@ C:\Users\user\Documents\Scripts\C-sharp-master\Projeto.Web.Mvc\obj\Debug\netcore
 C:\Users\user\Documents\Scripts\C-sharp-master\Projeto.Web.Mvc\obj\Debug\netcoreapp2.1\Projeto.Web.Mvc.pdb
 C:\Users\user\Documents\Scripts\C-sharp-master\Projeto.Web.Mvc\obj\Debug\netcoreapp2.1\Projeto.Web.Mvc.csproj.CopyComplete
 C:\Users\user\Documents\Scripts\C-sharp-master\Projeto.Web.Mvc\obj\Debug\netcoreapp2.1\Razor\Views\Shared\MasterPageLogado.g.cshtml.cs
-C:\Users\user\Documents\Scripts\C-sharp-master\Projeto.Web.Mvc\obj\Debug\netcoreapp2.1\Razor\Views\Tarefas\Cadastrar.g.cshtml.cs
 C:\Users\39235256801\Documents\sprint_4\Projeto.Web.Mvc\obj\Debug\netcoreapp2.1\Razor\Views\Shared\MasterPageDeslogado.g.cshtml.cs
 C:\Users\39235256801\Documents\sprint_4\Projeto.Web.Mvc\obj\Debug\netcoreapp2.1\Razor\Views\Shared\MasterPageLogado.g.cshtml.cs
-C:\Users\39235256801\Documents\sprint_4\Projeto.Web.Mvc\obj\Debug\netcoreapp2.1\Razor\Views\Tarefas\Cadastrar.g.cshtml.cs
 C:\Users\39235256801\Documents\sprint_4\Projeto.Web.Mvc\obj\Debug\netcoreapp2.1\Razor\Views\Usuario\Listar.g.cshtml.cs
+C:\Users\user\Documents\Scripts\C-sharp-master\Projeto.Web.Mvc\obj\Debug\netcoreapp2.1\Razor\Views\Tarefa\Cadastrar.g.cshtml.cs
+C:\Users\user\Documents\Scripts\C-sharp-master\Projeto.Web.Mvc\obj\Debug\netcoreapp2.1\Razor\Views\Usuario\Listar.g.cshtml.cs
+C:\Users\39235256801\Documents\sprint_4\Projeto.Web.Mvc\obj\Debug\netcoreapp2.1\Razor\Views\Tarefa\Cadastrar.g.cshtml.cs
+C:\Users\39235256801\Documents\sprint_4\Projeto.Web.Mvc\obj\Debug\netcoreapp2.1\Razor\Views\Usuario\Editar.g.cshtml.cs

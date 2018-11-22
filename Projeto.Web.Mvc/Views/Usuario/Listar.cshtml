@@ -1,5 +1,7 @@
 @using Projeto.Web.Mvc.Models;
 
+<h2>Seja bem Vindo </h2>
+
 <a href="/Usuario/Cadastrar">Sair</a>
 
 <h3>Listagem de Usuários</h3>
@@ -33,6 +35,9 @@
                 </td>
                 <td>
                     <a href="/Usuario/Excluir?id=@item.Id">Excluir</a>
+                </td>
+                <td>
+                    <a href="/Usuario/Editar?id=@item.Id">Editar</a>
                 </td>
             </tr>
         }

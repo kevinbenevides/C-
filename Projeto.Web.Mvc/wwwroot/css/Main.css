@@ -1,3 +1,59 @@
-.cor-amarelo{
-    color: yellow;
+*{
+    padding: 0%;
+    box-sizing: border-box;
+    margin: 0%;
+}
+
+body{
+    background-color: #444;
+    color: #fff;
+}
+
+a{
+    margin:100px 40%;
+    color: #fff;
+}
+
+h1{
+    text-align: center;
+}
+
+input {
+    margin: 3px auto;
+    border: 1px black solid;
+    border-radius: 30px;
+    outline: none;
+    padding: 4px;
+}
+
+.caixa-principal{
+    padding: 10px;
+    width: 100%;
+}
+
+.caixa {
+    background-color: rgb(3, 3, 99);
+    border-radius: 30px;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 10px 38%;
+    outline: none;
+}
+
+.caixa-editar{
+    background-color: rgb(153, 6, 6);
+    border-radius: 30px;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 10px 38%;
+    outline: none;
+}
+
+.caixa-login{
+    background-color: rgb(6, 107, 6);
+    border-radius: 30px;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 10px 38%;
+    outline: none;
 }

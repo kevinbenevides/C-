@@ -8,41 +8,16 @@
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="../../wwwroot/css/Main.css" rel="stylesheet" type="text/css"/>
-    <style>
-        body{
-            background-color: #444;
-            color: #fff;
-        }
-
-        a{
-            color: #fff;
-        }
-
-        input {
-            border-radius: 30px;
-            outline: none;
-        }
-
-        .caixa-principal{
-            padding: 10px;
-            width: 100%;
-        }
-
-        .caixa {
-            border: 1px solid black;
-            padding: 5px;
-            margin: 100px 40%;
-        }
-    </style>
+    
 </head>
 <body>
+    
     <a class="cor-amarelo" href="/Usuario/Cadastrar">Cadastrar Usuário</a>
     <a href="/Usuario/Login">Efetuar Login</a>
 
     <div class="caixa-principal">
-        <div class="caixa">
+        
             @RenderBody()
-        </div>
     </div>
 
     <footer>
