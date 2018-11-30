@@ -107,7 +107,7 @@ namespace Projeto.Web.Mvc.Repositorios
                 return lsUsuarios;
         }
 
-        public UsuarioModel Login(string email, string senha)
+        public UsuarioModel Login (string email, string senha)
         {
              using (StreamReader sr = new StreamReader ("usuarios.csv")) {
                 while (!sr.EndOfStream) {

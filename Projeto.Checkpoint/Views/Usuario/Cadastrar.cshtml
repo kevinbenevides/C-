@@ -1,0 +1,34 @@
+<head>
+<link href="/css/Main.css" rel="stylesheet" type="text/css"/>
+<title>Cadastrar Usuário</title>
+</head>
+@{
+    ViewBag.Title = "Cadastrar Usuário";
+    Layout = "MasterPageDeslogado";
+}
+
+<div class="caixa">
+    <h1>Formulário de Cadastro</h1>
+
+@ViewBag.Mensagem
+
+            <form action = "/Usuario/Cadastrar" method = "POST" >
+
+            <label> Nome: <input type = "text" class = "borda-amarela" name = "nome" placeholder="Ex: Kevin"></label><br>
+
+            <label>Email: <input type = "email" name = "email" placeholder="Ex: kevin@gmail.com"></label><br>
+
+            <label>Senha: <input type = "password" name = "senha" placeholder="Ex: 123456"></label><br>
+            
+            <label>Tipo de Cadastro:
+                <select name = "tipousuario">
+                    <option>--Selecione uma opção--</option>
+                    <option>Usuário</option>
+                    <option>Administrador</option>
+                </select>
+            </label> <br>
+
+            <input type = "submit" value = "Enviar"><br><br>
+
+            </form>
+        </div>
