@@ -19,7 +19,8 @@ h1{
 }
 
 input {
-    margin: 3px auto;
+    
+    margin: 3px;
     border: 1px black solid;
     border-radius: 30px;
     outline: none;

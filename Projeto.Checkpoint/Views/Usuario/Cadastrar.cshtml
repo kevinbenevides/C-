@@ -8,19 +8,19 @@
 }
 
 <div class="caixa">
-    <h1>Formulário de Cadastro</h1>
+    <h1>Cadastro</h1>
 
 @ViewBag.Mensagem
 
             <form action = "/Usuario/Cadastrar" method = "POST" >
 
-            <label> Nome: <input type = "text" class = "borda-amarela" name = "nome" placeholder="Ex: Kevin"></label><br>
+            <label> Nome: <br><input type = "text" class = "borda-amarela" name = "nome" placeholder="Ex: Kevin"></label><br>
 
-            <label>Email: <input type = "email" name = "email" placeholder="Ex: kevin@gmail.com"></label><br>
+            <label>Email: <br><input type = "email" name = "email" placeholder="Ex: kevin@gmail.com"></label><br>
 
-            <label>Senha: <input type = "password" name = "senha" placeholder="Ex: 123456"></label><br>
+            <label>Senha: <br><input type = "password" name = "senha" placeholder="Ex: 123456"></label><br>
             
-            <label>Tipo de Cadastro:
+            <label>Tipo de Cadastro:<br>
                 <select name = "tipousuario">
                     <option>--Selecione uma opção--</option>
                     <option>Usuário</option>
@@ -28,7 +28,9 @@
                 </select>
             </label> <br>
 
-            <input type = "submit" value = "Enviar"><br><br>
+            <input class = "botao" type = "submit" value = "Enviar"><br><br>
 
             </form>
+            <a class="cor-amarelo" href="/Usuario/Cadastrar">Cadastrar Usuário</a>
+            <a href="/Usuario/Login">Efetuar Login</a>
         </div>

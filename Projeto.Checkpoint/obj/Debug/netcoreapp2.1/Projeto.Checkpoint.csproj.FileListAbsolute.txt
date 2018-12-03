@@ -23,3 +23,4 @@ C:\Users\39235256801\Documents\sprint_4\Projeto.Checkpoint\obj\Debug\netcoreapp2
 C:\Users\39235256801\Documents\sprint_4\Projeto.Checkpoint\obj\Debug\netcoreapp2.1\Projeto.Checkpoint.csproj.CopyComplete
 C:\Users\39235256801\Documents\sprint_4\Projeto.Checkpoint\obj\Debug\netcoreapp2.1\Razor\Views\Usuario\Cadastrar.g.cshtml.cs
 C:\Users\39235256801\Documents\sprint_4\Projeto.Checkpoint\obj\Debug\netcoreapp2.1\Razor\Views\Usuario\Index.g.cshtml.cs
+C:\Users\39235256801\Documents\sprint_4\Projeto.Checkpoint\obj\Debug\netcoreapp2.1\Razor\Views\Usuario\Login.g.cshtml.cs

@@ -16,21 +16,44 @@ namespace Projeto.Checkpoint.Controllers
         }
 
         [HttpGet]
-        public ActionResult Cadastrar(){
+        public ActionResult Cadastrar () {
             return View ();
         }
 
         [HttpPost]
-        public ActionResult Cadastrar(IFormCollection form){
-            UsuarioModel usuario = new UsuarioModel();
-            usuario.Nome = form["nome"];
-            usuario.Email = form["email"];
-            usuario.Senha = form["senha"];
-            usuario.TipoUsuario = form["tipousuario"];
+        public ActionResult Cadastrar (IFormCollection form) {
+            UsuarioModel usuario = new UsuarioModel(
+                nome: form["nome"], 
+                email: form["email"],
+                senha: form["senha"],
+                tipousuario: form["tipousuario"]
+                                        );
+
+            UsuarioRepositorio usuarioRepositorio = new UsuarioRepositorio();
+            usuarioRepositorio.Cadastrar(usuario);
 
             ViewBag.Mensagem = "Usuário Cadastrado";
 
-            return RedirectToAction("Cadastrar", "Tarefa");
+            return RedirectToAction("Login", "Usuario");
+        }
+
+        [HttpGet]
+        public IActionResult Login () {
+            return View ();
+        }
+
+        [HttpPost]
+        public IActionResult Login (IFormCollection form) {
+            UsuarioRepositorio usuarioRepositorio = new UsuarioRepositorio();
+            UsuarioModel usuario = usuarioRepositorio.Login(form["email"], form["senha"]);
+
+            if(usuario != null){
+                HttpContext.Session.SetString("idUsuario", usuario.Id.ToString());
+                return RedirectToAction ("Index", "Usuario");
+            }
+
+            ViewBag.Mensagem = "Usuário inválido";
+            return View ();
         }
     }
 }
