@@ -25,7 +25,7 @@ namespace Projeto.Web.Mvc.Controllers
             transacao.Id = 1;
             transacao.Descricao = form["descricao"];
             transacao.Tipo = form["tipo"];
-            transacao.Data = DateTime.Now;
+            transacao.Data = DateTime.Now;            
 
             using(StreamWriter sw = new StreamWriter("tarefas.csv", true)){
                 sw.WriteLine($"{transacao.Id};{usuario.Nome};{usuario.Id};{transacao.Descricao};{transacao.Tipo};{transacao.Data}");
@@ -33,7 +33,7 @@ namespace Projeto.Web.Mvc.Controllers
 
             ViewBag.Mensagem = "Transação cadastrada";
             
-            return RedirectToAction("Cadastrar", "Usuário");
+            return View();
         }
 
     }

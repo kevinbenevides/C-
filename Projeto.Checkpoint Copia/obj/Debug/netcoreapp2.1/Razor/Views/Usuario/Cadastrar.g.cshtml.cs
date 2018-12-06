@@ -39,7 +39,7 @@ namespace AspNetCore
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
             BeginContext(0, 112, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6a0a92f892fd43be880762f85173af24", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4a582b3a26194203a1adfc06c667cc81", async() => {
                 BeginContext(6, 99, true);
                 WriteLiteral("\r\n<link href=\"/css/Main.css\" rel=\"stylesheet\" type=\"text/css\"/>\r\n<title>Cadastrar Usuário</title>\r\n");
                 EndContext();

@@ -42,4 +42,20 @@
     background-color: #1db0d4;
 }
 
+.links{
+    outline: none;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 18%;
+}
+
+.cal{
+    margin-left: 24%;
+}
+
+.links:hover{
+    color: #bbb;
+}
+
+
 /* Fim da Pagina Cadastro */

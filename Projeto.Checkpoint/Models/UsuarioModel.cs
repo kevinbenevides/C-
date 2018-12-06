@@ -6,23 +6,26 @@ namespace Projeto.Checkpoint.Models
         public string Nome {get; set;}
         public string Email {get; set;}
         public string Senha {get; set;}
-        public string TipoUsuario {get; set;}
 
-    public UsuarioModel(string nome, string email, string senha, string tipousuario)
+
+    public UsuarioModel(string nome, string email, string senha)
         {
             this.Nome = nome;
             this.Email = email;
             this.Senha = senha;
-            this.TipoUsuario = tipousuario;
         }
 
-    public UsuarioModel(int id, string nome, string email, string senha, string tipousuario)
+    public UsuarioModel(int id, string nome, string email, string senha)
         {
             this.Id = id;
             this.Nome = nome;
             this.Email = email;
             this.Senha = senha;
-            this.TipoUsuario = tipousuario;
         }
+
+    public UsuarioModel(string nome)
+    {
+        this.Nome = nome;
+    }
     }
 }

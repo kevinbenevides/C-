@@ -510,6 +510,72 @@ main{
 /* FIM DA PAGINA DUVIDAS */
 
 
+/* Página de Cadastro do Usuário*/
+.area-comentario{
+    color: #fff;
+    margin:5% 38% 8% ;
+    font-size: 20pt;
+}
+
+.comentario h1{
+    padding: 1%;
+    margin: auto auto;
+    border-radius: 10px 10px 0px 0px;
+    color: #fff;
+    font-size: 4em;
+    color: #fff;
+    text-align: center;
+}
+
+.area-comentario textarea{
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 8px 16px;
+    height: 100px;
+    width: 350px;
+    transition: border-color .3s;
+    outline: none;
+}
+
+.area-comentario textarea:focus{
+    border-color: #222;
+}
+
+.botao{
+    background-color: #1db0d4;
+    border: 1px solid black;
+    border-radius: 49px;
+    font-size: 15pt;
+    padding: 1%;
+    width: 20%;
+    outline: none;
+}
+
+
+.comentarios{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.caixa-comen{
+    background-color: #fff;
+    width: 20%;
+    height: 30%;
+    margin: 5% 5% ;
+    padding: 1%;
+    border-radius: 10px;
+    transition:  background , 0.5s;
+}
+
+.caixa-comen:hover{
+    background: #333;
+    color:#fff;
+    border: 1px solid #fff;
+}
+/* FIM DA PAGINA DE CADASTRO DO USUÁRIO */
+
+
 /* RODAPÉ DE TODAS AS PAGINAS */
 .rodape{
     background-color: #444;
@@ -700,6 +766,7 @@ main{
     .box-text{
         width: 85%;
     }
+
 
     /* responsividade da pagina duvidas */
 

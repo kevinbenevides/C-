@@ -1,16 +1,16 @@
-<link href="/css/Main.css" rel="stylesheet" type="text/css"/>
-<div class="caixa-login">
-    <h1>Login</h1>
-        <form action="/Usuario/Login" method="POST">
-            <label  class="cor-amarelo" >
-                Email
-                <input type="text" name="email" required="true">
-            </label><br><br>
-            <label>
-                Senha
-                <input type="password" name="senha" required="true">
-            </label><br><br>
+<link href="/css/login.css" rel="stylesheet" type="text/css"/>
 
-            <input type="submit" value="Entrar">
-        </form>
-</div>
+<h1>Login</h1>
+
+<form action="/Usuario/Login" method="POST">
+    <label  class="cor-amarelo" >
+        Email
+        <input type="text" name="email" required="true">
+    </label>
+    <label class="cor-azul">
+        Senha
+        <input type="password" name="senha" required="true">
+    </label>
+
+    <input type="submit" value="Entrar">
+</form>

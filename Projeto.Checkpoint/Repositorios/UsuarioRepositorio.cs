@@ -21,7 +21,7 @@ namespace Projeto.Checkpoint.Repositorios
 
             //Grava as informações no arquivo usuarios.csv
             using (StreamWriter sw = new StreamWriter ("usuarios.csv", true)) {
-                sw.WriteLine ($"{usuario.Id};{usuario.Nome};{usuario.Email};{usuario.Senha};{usuario.TipoUsuario}");
+                sw.WriteLine ($"{usuario.Id};{usuario.Nome};{usuario.Email};{usuario.Senha}");
             }
 
             return usuario;
@@ -45,8 +45,7 @@ namespace Projeto.Checkpoint.Repositorios
                             id: int.Parse (dados[0]),
                             nome: dados[1],
                             email: dados[2],
-                            senha: dados[3],
-                            tipousuario: dados[4]
+                            senha: dados[3]
                         );
 
                         return usuario;

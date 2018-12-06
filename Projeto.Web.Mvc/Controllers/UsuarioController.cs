@@ -4,7 +4,6 @@ using System.IO;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Projeto.Web.Mvc.Models;
-using Projeto.Web.Mvc.Repositorios;
 
 namespace Projeto.Web.Mvc.Controllers {
     public class UsuarioController : Controller {
@@ -16,14 +15,17 @@ namespace Projeto.Web.Mvc.Controllers {
         [HttpPost]
         public ActionResult Cadastrar (IFormCollection form) {
             UsuarioModel usuario = new UsuarioModel ();
+            usuario.Id = System.IO.File.ReadAllLines ("usuarios.csv").Length + 1;
+
             usuario.Nome = form["nome"];
             usuario.Email = form["email"];
             usuario.Senha = form["senha"];
             usuario.TipoCadastro = form["tipocadastro"];
             usuario.DataCriacao = DateTime.Now;
 
-            UsuarioRepositorio usuarioRepositorio = new UsuarioRepositorio();
-            usuarioRepositorio.Cadastrar(usuario);
+            using (StreamWriter sw = new StreamWriter ("usuarios.csv", true)) {
+                sw.WriteLine ($"{usuario.Id};{usuario.Nome};{usuario.Email};{usuario.Senha};{usuario.DataCriacao}");
+            }
 
             ViewBag.Mensagem = "Usuário Cadastrado";
 
@@ -37,8 +39,9 @@ namespace Projeto.Web.Mvc.Controllers {
 
         [HttpPost]
         public IActionResult Login (IFormCollection form) {
-            UsuarioRepositorio usuarioRepositorio = new UsuarioRepositorio();
-            UsuarioModel usuario = usuarioRepositorio.Login(form["email"], form["senha"]);
+            UsuarioModel usuario = new UsuarioModel ();
+            usuario.Email = form["email"];
+            usuario.Senha = form["senha"];
 
             using (StreamReader sr = new StreamReader ("usuarios.csv")) {
                 while (!sr.EndOfStream) {
@@ -66,74 +69,67 @@ namespace Projeto.Web.Mvc.Controllers {
         //viewdata armazena dados do c#
     //viewbag armazena mensagens
         public IActionResult Listar () {
-            UsuarioRepositorio usuarioRepositorio = new UsuarioRepositorio();
+            List<UsuarioModel> lsUsuarios = new List<UsuarioModel> ();
 
-            ViewData["Usuarios"] = usuarioRepositorio.Listar();
+            string[] linhas = System.IO.File.ReadAllLines ("usuarios.csv");
+
+            UsuarioModel usuario;
+
+            foreach (var item in linhas) {
+
+                //Verificando se a linha é vazia
+                if(string.IsNullOrEmpty(item)){
+                    //Retorna para o foreach
+                    continue;
+                }
+
+                string[] linha = item.Split (';');
+                
+                usuario = new UsuarioModel ();
+
+                usuario.Id = int.Parse (linha[0]);
+                usuario.Nome = linha[1];
+                usuario.Email = linha[2];
+                usuario.Senha = linha[3];
+                usuario.DataCriacao = DateTime.Now;
+                usuario.DataCriacao = DateTime.Parse (linha[4]);
+
+                lsUsuarios.Add (usuario);
+
+            }
+
+            ViewData["Usuarios"] = lsUsuarios;
 
             return View ();
         }
 
         [HttpGet]
         public IActionResult Excluir (int id) {
-            UsuarioRepositorio usuarioRepositorio = new UsuarioRepositorio();
-            usuarioRepositorio.Excluir(id);
+            //Pega os dados do arquivo usuario.csv
+            string[] linhas = System.IO.File.ReadAllLines("usuarios.csv");
+            
+            //Percorre as linhas do arquivo
+            for(int i = 0; i < linhas.Length; i++)
+            {
+                //Separa as colunas de linha
+                string[] linha = linhas[i].Split(';');
+
+                //Verifica se o id da linha é o id passado
+                if(id.ToString() == linha[0]){
+                    //Defino a linha como vazia
+                    linhas[i] = "";
+                    break;
+                } 
+            }
+
+            //Armazeno no arquivo csv todas as linhas
+            System.IO.File.WriteAllLines("usuarios.csv", linhas);
             
             TempData["Mensagem"] = "Usuário excluído";
 
             return RedirectToAction("Listar");
         }
-        
-        [HttpGet]
-        public IActionResult Editar(int id) {
 
-            if(id == 0){
-                TempData["Mensagem"] = "Informe um usuário para editar";
-                return RedirectToAction("Listar");
-            }
-
-            string[] linhas = System.IO.File.ReadAllLines("usuarios.csv");
-
-            foreach (var item in linhas)
-            {
-                string[] dados = item.Split(';');
-
-                if (id.ToString() == dados[0]){
-                    UsuarioModel usuario = new UsuarioModel();
-                    usuario.Id = int.Parse(dados[0]);
-                    usuario.Nome = dados[1];
-                    usuario.Email = dados[2];
-                    usuario.Senha = dados[3];
-                    usuario.DataCriacao = DateTime.Parse(dados[4]);
-
-
-                    ViewBag.Usuario = usuario;
-                    break;
-                }
-            }
-
-            return View();
-        }
-
-        [HttpPost]
-        public IActionResult Editar(IFormCollection form) {
-            //Declara um objeto UsuarioModel e atribui os valores do form
-            UsuarioModel usuario = new UsuarioModel{
-                Id = int.Parse(form["id"]),
-                Nome = form["nome"],
-                Email = form["email"],
-                Senha = form["senha"],
-                DataCriacao = DateTime.Parse(form["dataCriacao"])
-            };
-
-            //Cria um objeto UsuarioRepositorio e edita
-            UsuarioRepositorio usuarioRepositorio = new UsuarioRepositorio();
-            usuarioRepositorio.Editar(usuario);
-
-
-            TempData["Mensagem"] = "usuário editado";
-
-            return RedirectToAction("Listar");
-        }
     }
 
 }

@@ -25,9 +25,8 @@ namespace Projeto.Checkpoint.Controllers
             UsuarioModel usuario = new UsuarioModel(
                 nome: form["nome"], 
                 email: form["email"],
-                senha: form["senha"],
-                tipousuario: form["tipousuario"]
-                                        );
+                senha: form["senha"]
+                );
 
             UsuarioRepositorio usuarioRepositorio = new UsuarioRepositorio();
             usuarioRepositorio.Cadastrar(usuario);
@@ -49,6 +48,7 @@ namespace Projeto.Checkpoint.Controllers
 
             if(usuario != null){
                 HttpContext.Session.SetString("idUsuario", usuario.Id.ToString());
+                HttpContext.Session.SetString("nomeUsuario", usuario.Nome);
                 return RedirectToAction ("Index", "Usuario");
             }
 
