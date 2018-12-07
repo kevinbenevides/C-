@@ -5,6 +5,6 @@ namespace Projeto.Checkpoint.Interfaces
 {
     public interface IComentario 
     {
-         UsuarioModel ComentarioUsuario(UsuarioModel comentario);
+        ComentarioModel Comentar(ComentarioModel comentario);
     }
 }

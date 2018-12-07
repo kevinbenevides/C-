@@ -1,3 +1,6 @@
+@using Projeto.Checkpoint.Models;
+@using System;
+
 @{
     ViewBag.Title = "Comentários do Usuário";
     Layout = "MasterPageLogado";
@@ -34,7 +37,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="Comentario/ComentarioUsuario">
+                            <a href="Comentario/Comentar">
                                 <div class="link m-res">
                                     Comentários
                                 </div>
@@ -76,11 +79,17 @@
 
         <div class="comentarios">
             <div class="caixa-comen">
-                <h3>(Nome) - Usuario </h3>
-                <p>Isto é um exemplo de comentario feito<br>
-                    para que possa servir como um substituto<br>
-                    temporário, enquanto o c# ainda não foi criado.
-                </p>
+                @foreach (var item in ViewData["Comentarios"] as List<ComentarioModel>){
+                    <h3>
+                        @item.Usuario.Nome
+                    </h3>
+                    <tr>
+                        @item.Texto
+                    </tr>
+                    <p>
+                        @item.DataCriacao
+                    </p>
+                    }
             </div>
 
             <div class="caixa-comen">

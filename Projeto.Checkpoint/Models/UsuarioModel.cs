@@ -27,5 +27,6 @@ namespace Projeto.Checkpoint.Models
     {
         this.Nome = nome;
     }
+    
     }
 }

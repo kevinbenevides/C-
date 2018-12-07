@@ -49,7 +49,7 @@ namespace Projeto.Checkpoint.Controllers
             if(usuario != null){
                 HttpContext.Session.SetString("idUsuario", usuario.Id.ToString());
                 HttpContext.Session.SetString("nomeUsuario", usuario.Nome);
-                return RedirectToAction ("Index", "Usuario");
+                return RedirectToAction ("Comentar", "Comentario");
             }
 
             ViewBag.Mensagem = "Usuário inválido";
