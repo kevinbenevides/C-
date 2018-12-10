@@ -1,19 +1,20 @@
-@using Projeto.Checkpoint.Models;
-@using System;
+<!DOCTYPE html>
+<html lang="pt-br">
 
-@{
-    ViewBag.Title = "Comentários do Usuário";
-    Layout = "MasterPageLogado";
-}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Dúvidas Frequentes</title>
+</head>
 
-<link href="/css/style.css" rel="stylesheet" type="text/css">
-
-<header>
+<body>
+    <header>
         <div class="background-topos">
             <div class="logo">
                 <img class="none none2" src="/img/logo.png" alt="#">
             </div>
-            <div class="content-topo">
+             <div class="content-topo">
                 <div class="login none none2">
                     <a href="/Usuario/Login">Login</a>
                 </div>
@@ -64,20 +65,27 @@
         </div>
         <!-- fim do background-topo -->
     </header>
-
     <main>
-        <div class="comentario">
-            <h1>Comentários</h1>
-            <form class="area-comentario"  action = "/Comentario/Cadastrar" method = "POST"> 
-                <label>Escreva seu comentario sobre o CheckList:<br>
-                    <textarea name="texto" placeholder="Digite aqui..." required="true" maxlength="100" minlength="1"></textarea>
-                </label><br> 
-                <input class="botao" type="submit" value="Enviar">
-            </form>
-
-        </div>
-
-        
+        <section>
+            <div class="duvidas-prin">
+                <h1>Dúvidas Frequentes</h1>
+                <div class="duvidas duvida1">
+                    <h2>Como me Cadastro?</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        <br> Unde velit aliquam hic similique nam vitae dicta adipisci eos</p>
+                </div>
+                <div class="duvidas duvida2">
+                    <h2>Como recupero minha senha?</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        <br> Unde velit aliquam hic similique nam vitae dicta adipisci eos</p>
+                </div>
+                <div class="duvidas duvida3">
+                    <h2>Como posso faço para me tornar um colaborador?</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        <br> Unde velit aliquam hic similique nam vitae dicta adipisci eos</p>
+                </div>
+            </div>
+        </section>
     </main>
     <footer class="rodape">
         <ul class="none none2">
@@ -87,8 +95,8 @@
         </ul>
         <ul class="none none2">
             <li>Dúvidas</li>
-            <li><a href="Usuario/Login">Login</a></li>
-            <li><a href="Usuario/Cadastrar">Cadastro</a></li>
+            <li>Login</li>
+            <li>Cadastro</li>
         </ul>
         <div class="redes-sociais none none2 ">
             <h3>Redes Sociais:</h3>
@@ -103,3 +111,6 @@
             </a>
         </div>
     </footer>
+</body>
+
+</html>

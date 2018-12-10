@@ -16,6 +16,21 @@ namespace Projeto.Checkpoint.Controllers
         }
 
         [HttpGet]
+        public ActionResult Sobre(){
+            return View();
+        }
+
+        [HttpGet]
+        public ActionResult Contato(){
+            return View();
+        }
+
+        [HttpGet]
+        public ActionResult Duvidas(){
+            return View();
+        }
+
+        [HttpGet]
         public ActionResult Cadastrar () {
             return View ();
         }
@@ -45,15 +60,27 @@ namespace Projeto.Checkpoint.Controllers
         public IActionResult Login (IFormCollection form) {
             UsuarioRepositorio usuarioRepositorio = new UsuarioRepositorio();
             UsuarioModel usuario = usuarioRepositorio.Login(form["email"], form["senha"]);
+            
+          
 
             if(usuario != null){
+
                 HttpContext.Session.SetString("idUsuario", usuario.Id.ToString());
                 HttpContext.Session.SetString("nomeUsuario", usuario.Nome);
+                
+                if(usuario.Email == "admin@carfel.com" && usuario.Senha == "admin" ){
+                    return RedirectToAction("Administrador", "Comentario");
+                }
+
                 return RedirectToAction ("Comentar", "Comentario");
             }
+
 
             ViewBag.Mensagem = "Usuário inválido";
             return View ();
         }
+
+
+
     }
 }

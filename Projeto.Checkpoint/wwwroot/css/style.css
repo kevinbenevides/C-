@@ -511,20 +511,16 @@ main{
 
 
 /* Página de Cadastro do Usuário*/
+.comentario h1{
+    text-align: center;
+    font-size: 4em;
+    color: #fff;
+}
+
 .area-comentario{
     color: #fff;
     margin:5% 38% 8% ;
     font-size: 20pt;
-}
-
-.comentario h1{
-    padding: 1%;
-    margin: auto auto;
-    border-radius: 10px 10px 0px 0px;
-    color: #fff;
-    font-size: 4em;
-    color: #fff;
-    text-align: center;
 }
 
 .area-comentario textarea{
@@ -551,6 +547,21 @@ main{
     outline: none;
 }
 
+.sessao-comentarios h2{
+    color: #fff;
+    font-size: 3em;
+    margin: 5% auto 4%;
+    display: block;
+    text-align: center;
+}
+
+.sessao-comentarios-admin h2{
+    color: #fff;
+    font-size: 3em;
+    margin: 0% auto 4%;
+    display: block;
+    text-align: center;
+}
 
 .comentarios{
     display: flex;
@@ -565,14 +576,8 @@ main{
     margin: 5% 5% ;
     padding: 1%;
     border-radius: 10px;
-    transition:  background , 0.5s;
 }
 
-.caixa-comen:hover{
-    background: #333;
-    color:#fff;
-    border: 1px solid #fff;
-}
 /* FIM DA PAGINA DE CADASTRO DO USUÁRIO */
 
 
@@ -619,6 +624,7 @@ main{
 /* responsividade tablet */
 @media screen and (max-width:880px){
     /* responsividade da pagina home */
+    
     .none2{
         display: none;
     }
@@ -639,6 +645,24 @@ main{
 
     .plano h3{
         width: 65%;
+    }
+
+    .comentarios{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        grid-gap: 10px;
+        padding: 2%;
+    }
+
+    .caixa-comen{
+        width: 78%;
+        height: 88%;
+        padding: 2%;
+    }
+
+    .area-comentario{
+        margin: 5% 31% 8%;
     }
     /* fim da responsividade da pagina home */
 
@@ -682,7 +706,8 @@ main{
     }
 
     .m-res{
-        margin-top:10px;
+        font-size: 14pt;
+        margin-top:4px;
     }
 
     .banner img{
@@ -734,6 +759,16 @@ main{
         width: 65%;
     }
 
+    .comentarios{
+        display: flex;
+        flex-direction: column;
+        margin-left: 10%;
+    }
+
+    .area-comentario {
+        margin: 5% 10% 8%;
+    }
+    
     /* responsividade da pagina sobre */
     .sobre-content{
         margin: 15% auto;
@@ -786,4 +821,6 @@ main{
     .duvidas p{
         padding: 5%;
     }
+
+    
 }

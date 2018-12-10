@@ -7,7 +7,10 @@ namespace Projeto.Checkpoint.Models
         public string Email {get; set;}
         public string Senha {get; set;}
 
-
+public UsuarioModel()
+{
+    
+}
     public UsuarioModel(string nome, string email, string senha)
         {
             this.Nome = nome;

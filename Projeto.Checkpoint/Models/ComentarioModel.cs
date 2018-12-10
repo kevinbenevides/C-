@@ -8,6 +8,7 @@ namespace Projeto.Checkpoint.Models {
         public UsuarioModel Usuario { get; set; }
 
         public ComentarioModel (int idUsuario, string nome, int idComentario, string texto,  DateTime datacriacao) {
+            this.Usuario = new UsuarioModel();
             this.Usuario.Id = idUsuario;
             this.Usuario.Nome = nome;
             this.Id = idComentario;

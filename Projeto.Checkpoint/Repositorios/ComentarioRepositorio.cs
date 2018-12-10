@@ -22,7 +22,7 @@ namespace Projeto.Checkpoint.Repositorios
 
             List<ComentarioModel> lsUsuarios = new List<ComentarioModel> ();
 
-            if(File.Exists("comentarios.csv")){
+            if(!File.Exists("comentarios.csv")){
                 return lsUsuarios;
             }
 

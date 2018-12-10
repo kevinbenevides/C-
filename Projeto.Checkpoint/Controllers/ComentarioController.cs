@@ -24,18 +24,18 @@ namespace Projeto.Checkpoint_Copia.Controllers
             return View();
         }
 
-        // [HttpPost]
-        // public ActionResult ComentarioUsuario(IFormCollection form){
-        //     UsuarioModel usuario = new UsuarioModel(
-        //        nome: form["nome"]
-        //     );
-        //     ComentarioModel comentario = new ComentarioModel();
-        //     usuario.Nome = 
-        //     comentario.Texto = form["texto"];
-        //     comentario.DataCriacao = DateTime.Now;
+        [HttpGet]
+        public ActionResult Administrador(){
+            if(string.IsNullOrEmpty(HttpContext.Session.GetString("idUsuario"))){
+                return RedirectToAction("Login", "Usuario");
+            }
 
-        //     return View();
-        // }
+             ComentarioRepositorio comentarioRepositorio = new ComentarioRepositorio();
+             ViewData["Comentarios"] = comentarioRepositorio.Listar();
+    
+            return View();
+        }
+
 
         [HttpPost]
         public IActionResult Cadastrar(IFormCollection form){
@@ -52,11 +52,35 @@ namespace Projeto.Checkpoint_Copia.Controllers
             ComentarioRepositorio comentarioRepositorio = new ComentarioRepositorio();
             comentarioRepositorio.Comentar(comentario);
 
-            ViewBag.Mensagem = "Transação cadastrada";
-
             ViewData["Comentarios"] = comentarioRepositorio.Listar();
 
             return RedirectToAction("Comentar", "Comentario");
+        }
+
+
+        [HttpGet]
+        public IActionResult Excluir (int id) {
+            //Pega os dados do arquivo usuario.csv
+            string[] linhas = System.IO.File.ReadAllLines("comentarios.csv");
+            
+            //Percorre as linhas do arquivo
+            for(int i = 0; i < linhas.Length; i++)
+            {
+                //Separa as colunas de linha
+                string[] linha = linhas[i].Split(';');
+
+                //Verifica se o id da linha é o id passado
+                if(id.ToString() == linha[0]){
+                    //Defino a linha como vazia
+                    linhas[i] = "";
+                    break;
+                } 
+            }
+
+            //Armazeno no arquivo csv todas as linhas
+            System.IO.File.WriteAllLines("comentarios.csv", linhas);
+
+            return RedirectToAction("Administrador", "Comentario");
         }
     }
 }

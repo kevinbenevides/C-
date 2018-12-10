@@ -59,3 +59,32 @@
 
 
 /* Fim da Pagina Cadastro */
+
+@media screen and (max-width:425px){
+/* responsividade da pagina de cadastro */
+
+.caixa{
+    margin: 1%;
+}
+}
+
+@media screen and (max-width:880px){
+
+    .caixa-principal h1{
+        margin-left: 0px;
+        margin-right: 66px;
+    }
+    
+    .caixa{
+        margin: 10%;
+        padding: 10%;
+    }
+    
+    .botao{
+        margin-left: 3%;
+    }
+    
+    .links{
+        margin-left: 29%;
+    }
+}

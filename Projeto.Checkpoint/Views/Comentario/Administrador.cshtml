@@ -44,7 +44,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="/Usuario/Contato">
+                            <a href="/Usuaori/Contato">
                                 <div class="link">
                                     Fale Conosco
                                 </div>
@@ -64,20 +64,30 @@
         </div>
         <!-- fim do background-topo -->
     </header>
-
     <main>
-        <div class="comentario">
-            <h1>Comentários</h1>
-            <form class="area-comentario"  action = "/Comentario/Cadastrar" method = "POST"> 
-                <label>Escreva seu comentario sobre o CheckList:<br>
-                    <textarea name="texto" placeholder="Digite aqui..." required="true" maxlength="100" minlength="1"></textarea>
-                </label><br> 
-                <input class="botao" type="submit" value="Enviar">
-            </form>
 
-        </div>
+        <section class="sessao-comentarios-admin">
+            <h2>Comentários</h2>
+            <div class="comentarios">
+                
 
-        
+                @foreach (var item in ViewData["Comentarios"] as List<ComentarioModel>)
+                {
+                    <div class="caixa-comen">
+                        <h3>
+                            @item.Usuario.Nome 
+                        </h3>
+                        <p> 
+                            @item.Texto
+                        </p>
+                        <a href="/Comentario/Excluir?id=@item.Id">Excluir</a>
+                    </div>
+                }
+
+                
+            </div>
+        </section>
+
     </main>
     <footer class="rodape">
         <ul class="none none2">
