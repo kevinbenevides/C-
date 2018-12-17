@@ -47,7 +47,8 @@ namespace Projeto.Checkpoint_Copia.Controllers
             comentario.Id = 1;
             comentario.Texto = form["texto"];
             comentario.DataCriacao = DateTime.Now;
-            comentario.Usuario = usuarioRep.BuscarporId(int.Parse(HttpContext.Session.GetString("idUsuario")));           
+            comentario.Usuario = usuarioRep.BuscarporId(int.Parse(HttpContext.Session.GetString("idUsuario")));  
+            comentario.Status = "Espera";         
 
             ComentarioRepositorio comentarioRepositorio = new ComentarioRepositorio();
             comentarioRepositorio.Comentar(comentario);
@@ -66,11 +67,18 @@ namespace Projeto.Checkpoint_Copia.Controllers
             //Percorre as linhas do arquivo
             for(int i = 0; i < linhas.Length; i++)
             {
+
+                //Verifica se a linha é vazia
+                if (string.IsNullOrEmpty (linhas[i])) {
+                    //Retorna para o foreach
+                    continue;
+                }
+
                 //Separa as colunas de linha
                 string[] linha = linhas[i].Split(';');
 
                 //Verifica se o id da linha é o id passado
-                if(id.ToString() == linha[0]){
+                if(id.ToString() == linha[2]){
                     //Defino a linha como vazia
                     linhas[i] = "";
                     break;
@@ -79,6 +87,22 @@ namespace Projeto.Checkpoint_Copia.Controllers
 
             //Armazeno no arquivo csv todas as linhas
             System.IO.File.WriteAllLines("comentarios.csv", linhas);
+
+            return RedirectToAction("Administrador", "Comentario");
+        }
+
+        [HttpGet]
+        public IActionResult Aprovar(int id){
+            
+            ComentarioRepositorio comentarioRepositorio = new ComentarioRepositorio();
+
+            ComentarioModel comentario = comentarioRepositorio.BuscarporId(id);
+
+            if(comentario.Status == "Espera")
+            {                 
+                comentario.Status = "Aprovado";
+                comentarioRepositorio.Aprovar(comentario);
+            }
 
             return RedirectToAction("Administrador", "Comentario");
         }

@@ -1,4 +1,5 @@
-
+@using Projeto.Checkpoint.Models;
+@using System;
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -163,37 +164,25 @@
         <section class="sessao-comentarios">
             <h2>Comentários</h2>
             <div class="comentarios">
-                <div class="caixa-comen">
-                    <h3>(Nome) - Usuario </h4>
-                    <p>Isto é um exemplo de comentario feito<br>
-                        para que possa servir como um substituto<br>
-                        temporário, enquanto o c# ainda não foi criado.
-                    </p>
-                </div>
-
-                <div class="caixa-comen">
-                    <h3>(Nome) - Usuario </h3>
-                    <p>Isto é um exemplo de comentario feito<br>
-                        para que possa servir como um substituto<br>
-                        temporário, enquanto o c# ainda não foi criado.
-                    </p>
-                </div>
-
-                <div class="caixa-comen">
-                    <h3>(Nome) - Usuario </h3>
-                    <p>Isto é um exemplo de comentario feito<br>
-                        para que possa servir como um substituto<br>
-                        temporário, enquanto o c# ainda não foi criado.
-                    </p>
-                </div>
-
-                <div class="caixa-comen">
-                    <h3>(Nome) - Usuario </h3>
-                    <p>Isto é um exemplo de comentario feito<br>
-                        para que possa servir como um substituto<br>
-                        temporário, enquanto o c# ainda não foi criado.
-                    </p>
-                </div>
+                
+                @foreach (var item in ViewData["Comentarios"] as List<ComentarioModel>)
+                {
+                    @if (item.Status == "Aprovado")
+                    {
+                        <div class="caixa-comen">
+                            <h3>
+                                @item.Usuario.Nome 
+                            </h3>
+                            <p> 
+                                @item.Texto
+                            </p>
+                            <p>
+                                @item.DataCriacao.ToShortDateString()
+                            </p>
+                        </div>
+                    }
+                }
+                
             </div>
         </section>
     </main>

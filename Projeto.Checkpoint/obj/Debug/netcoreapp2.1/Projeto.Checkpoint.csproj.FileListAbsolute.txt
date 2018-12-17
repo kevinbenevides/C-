@@ -62,3 +62,5 @@ C:\Users\39235256801\Documents\sprint_4\Projeto.Checkpoint\obj\Debug\netcoreapp2
 C:\Users\39235256801\Documents\sprint_4\Projeto.Checkpoint\obj\Debug\netcoreapp2.1\Razor\Views\Usuario\Contato.g.cshtml.cs
 C:\Users\39235256801\Documents\sprint_4\Projeto.Checkpoint\obj\Debug\netcoreapp2.1\Razor\Views\Usuario\Duvidas.g.cshtml.cs
 C:\Users\39235256801\Documents\sprint_4\Projeto.Checkpoint\obj\Debug\netcoreapp2.1\Razor\Views\Usuario\Sobre.g.cshtml.cs
+C:\Users\user\Documents\Scripts\C-sharp-master\Projeto.Checkpoint\obj\Debug\netcoreapp2.1\Razor\Views\Comentario\Administrador.g.cshtml.cs
+C:\Users\user\Documents\Scripts\C-sharp-master\Projeto.Checkpoint\obj\Debug\netcoreapp2.1\Razor\Views\Comentario\ComentarioUsuario.g.cshtml.cs

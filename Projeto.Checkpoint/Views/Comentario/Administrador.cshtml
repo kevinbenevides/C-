@@ -44,7 +44,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="/Usuaori/Contato">
+                            <a href="/Usuario/Contato">
                                 <div class="link">
                                     Fale Conosco
                                 </div>
@@ -80,7 +80,11 @@
                         <p> 
                             @item.Texto
                         </p>
+                        <p>
+                            @item.DataCriacao.ToShortDateString()
+                        </p>
                         <a href="/Comentario/Excluir?id=@item.Id">Excluir</a>
+                        <a href="/Comentario/Aprovar?id=@item.Id">Aprovar</a>
                     </div>
                 }
 

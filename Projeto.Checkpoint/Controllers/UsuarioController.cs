@@ -12,6 +12,9 @@ namespace Projeto.Checkpoint.Controllers
     {
         [HttpGet]
         public ActionResult Index(){
+            
+            ComentarioRepositorio comentarioRepositorio = new ComentarioRepositorio();
+            ViewData["Comentarios"] = comentarioRepositorio.Listar();
             return View ();
         }
 
@@ -80,6 +83,14 @@ namespace Projeto.Checkpoint.Controllers
             return View ();
         }
 
+        [HttpPost]
+        public IActionResult Logout(){
+            HttpContext.Session.Remove("email");
+            HttpContext.Session.Remove("senha");
+            HttpContext.Session.Clear();
+
+            return RedirectToAction("Index", "Usuario");
+        }
 
 
     }
